@@ -1,0 +1,116 @@
+body {
+    font-family: 'Montserrat';
+	margin:0px;
+	padding:0px;
+	height:100%;
+    color: rgb(34,33,33);
+    background: white;
+font-weight: 500;
+}
+main{
+    display: block;
+}
+
+p {
+font-weight:lighter;
+
+    
+    
+}
+img {
+display:block;
+width: 60%;
+margin: auto;
+max-width:500;
+padding: 5;
+
+}
+.pagewrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    
+
+}
+div {
+    display: block;
+}
+.profile {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.profile:hover{
+animation:spin 5s infinite;
+}
+body{display: block;
+    margin: 8px;
+}
+
+h2{
+    font-family: 'Corben';
+    font-size:x-large ;
+    font-weight:bold;
+    color:rgb(255,87,51);
+}
+h1{
+    font-size:xx-large;
+    text-align:center;
+    font-weight:bolder
+}
+section{
+    text-align:center;
+    padding: 10px; 
+    margin:auto;
+}
+
+
+.watermelon{
+    background-image: url("media/jollyrancher.jpeg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    display:block;
+width:100%;
+padding:5;
+max-width:500;
+
+}
+.apple{
+    background-image: url("media/airheads.jpeg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    display:block;
+width:100%;
+margin: auto;
+max-width:500;
+padding: 40px;
+}
+h3{
+    font-size: 20px;
+    font-weight:bold;
+}
+li{
+    list-style-type: square;
+    
+}
+a{
+    text-decoration:none;
+}
+footer{
+    font-size:0.75em;
+    
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(720deg);
+    }
+}
