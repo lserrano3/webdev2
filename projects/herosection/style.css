@@ -1,0 +1,90 @@
+* {margin: 0;  box-sizing: border-box;}
+:root{
+    --font-textone:'Kanit', sans-serif;
+    --font-texttwo:'Averia Libre', cursive;
+    --font-textthree:'Hind Guntur', sans-serif;
+    --header-size: 3em;
+
+}
+.sitename{
+    background-image: url(https://picsum.photos/seed/picsum/600/600);
+    background-repeat:no-repeat;
+    width: 100% auto;
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.aliens{
+    padding-top:3em;
+    padding-left:3vh;
+    font-size:var(--header-size);
+    font-family:var(--font-textone);
+
+}
+.civilizations{
+    padding-top:5px;
+    padding-left:3vh;
+    font-size:3ch;
+    font-family:var(--font-texttwo);
+}
+main{
+    font-family:var(--font-textthree);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin: auto;
+    max-width:90vh;
+    padding:2em; 
+    font-size:20px;       
+}
+
+h3{
+    font-weight:bolder;
+}
+img{
+  
+margin: 1em auto;
+place-items: center;
+width: auto;  
+max-width: 100%;
+
+
+}
+header{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+padding-top:0;
+margin:15px;
+
+}
+a {
+    font-size: 20px;
+    text-decoration:none;
+    color:gray;
+    font-family:var(--font-textthree);
+      
+}
+
+#navbar{
+    position: sticky;
+    background:white;
+
+    top:0;
+}
+.sitetitle{
+   font-family:var(--font-textone);
+   font-size:30px;
+
+}
+footer{
+    font-family:var(--font-textthree);
+    font-style:italic;
+    font-size:1em;
+    text-align:center;
+    margin: .125rem;
+}
