@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress</title>
+</head>
+<body>
+    <header>
+  <h1>Scroll Progess</h1>
+  <div class="progress-container">
+      <div class="progress-bar"></div>
+  </div>
+</header>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit iste animi ipsa corrupti impedit repellendus sed recusandae. Consectetur tempora dolores ullam error officiis, illum exercitationem explicabo ratione cumque est! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint excepturi libero culpa itaque magni delectus dignissimos. Dolor voluptate consequatur alias, possimus ullam officiis. Impedit nemo eius repellendus quaerat sapiente omnis.</p>
+  
+
+<script>
+window.onscroll = function() {
+    updateProgress()
+};
+
+function updateProgress(){
+
+    //calculate how much has been scrolled
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    console.log("winScroll: ", winScroll);
+
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    console.log("height: ", height);
+
+    let scrolled = (winScroll / height) * 100;
+
+    //use the amount scrolled to style the progress bar
+    document.querySelector(".progress-bar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html>
